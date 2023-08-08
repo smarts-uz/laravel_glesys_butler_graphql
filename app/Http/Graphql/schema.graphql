@@ -1,0 +1,8 @@
+type Query {
+    pendingSignups: [Signup!]!
+}
+
+type Signup {
+    email: String!
+    verificationToken: String!
+}
