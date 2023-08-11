@@ -1,13 +1,17 @@
 type Query {
     author: [Author!]!
+    authors: [Author!]!
     book: [Book!]!
+    books: [Book!]!
 }
 
 type Author {
+    id: ID!
     name: String!
     bio: String!
 }
 type Book{
+    id: ID!
     title: String!
     publication_year: String!
     author_id: Int!
