@@ -1,8 +1,14 @@
 type Query {
-    pendingSignups: [Signup!]!
+    author: [Author!]!
+    book: [Book!]!
 }
 
-type Signup {
-    email: String!
-    verificationToken: String!
+type Author {
+    name: String!
+    bio: String!
+}
+type Book{
+    title: String!
+    publication_year: String!
+    author_id: Int!
 }
